@@ -1,15 +1,9 @@
-import PortfolioContainer from './PortfolioContainer'
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
 
-
+import Home from './Components/Home';
 
 function App() {
-  return (
-    <div className="portfolio">
-      <PortfolioContainer />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
