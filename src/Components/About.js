@@ -1,47 +1,41 @@
-// WHEN I am presented with the About Me section
-// THEN I see a recent photo or avatar of the developer and a short bio about them
-
 import React from "react";
+import Card from 'react-bootstrap/Card';
 
-const styles = {
-    card: {
-      margin: 20,
-      background: '#e8eaf6',
-    },
-    heading: {
-      background: '#3f51b5',
-      minHeight: 50,
-      lineHeight: 3.5,
-      fontSize: '1.2rem',
-      color: 'white',
-      padding: '0 20px',
-    },
-    content: {
-      padding: 20,
-    },
-  };
+// console.log("About Page");
 
-function About ()  {
-    return(
+function About () {
+  <>
+        {[
+            'Light'           
+          ].map((variant) => (
+            <Card
+              bg={variant.toLowerCase()}
+              key={variant}
+              text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+              style={{ width: '50rem' }}
+              className="mb-2"
+            >
+              <Card.Body>
+                <Card.Title>Alka Sah </Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </Card.Text>
+                <Card.Link href = "/About">About Me</Card.Link>
+                <Card.Link href = "/">Portfolio</Card.Link>
+                <Card.Link href = "/">Contact</Card.Link>
+                <Card.Link href = "/">Resume</Card.Link>
+              </Card.Body>
+            </Card>
+          ))}
+          </>
+ 
+}
 
-        <div style={styles.card}>
-      <div style={styles.heading}>Lorem ipsum dolor</div>
-      <div style={styles.content}>
-        `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?`
-      </div>
-    </div>
+export default About()
+
+
+
 
         // <section className="main section">
         //     <div className="about">
@@ -58,6 +52,4 @@ function About ()  {
         //     <div className="avatar"></div> 
         //     </div>
         // </section>
-    )
-}
-export default About;
+    
