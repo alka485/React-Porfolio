@@ -13,6 +13,14 @@ function Home () {
               style={{ width: '50rem' }}
               className="mb-2"
             >
+              <Card.Header as = 'h8'>Alka Sah
+              
+              <Card.Link href = "/About">About Me</Card.Link>
+                <Card.Link href = "/Portfolio">Portfolio</Card.Link>
+                <Card.Link href = "/">Contact</Card.Link>
+                <Card.Link href = "/">Resume</Card.Link>
+                
+                </Card.Header>  
               <Card.Body>
                 <Card.Title>Alka Sah </Card.Title>
                 <Card.Text>
@@ -20,7 +28,7 @@ function Home () {
                   bulk of the card's content.
                 </Card.Text>
                 <Card.Link href = "/About">About Me</Card.Link>
-                <Card.Link href = "/">Portfolio</Card.Link>
+                <Card.Link href = "/Portfolio">Portfolio</Card.Link>
                 <Card.Link href = "/">Contact</Card.Link>
                 <Card.Link href = "/">Resume</Card.Link>
               </Card.Body>

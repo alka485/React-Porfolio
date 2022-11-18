@@ -1,9 +1,9 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-
-// console.log("About Page");
+import Image from 'react-bootstrap/Image';
 
 function About () {
+  return (
   <>
         {[
             'Light'           
@@ -12,27 +12,34 @@ function About () {
               bg={variant.toLowerCase()}
               key={variant}
               text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-              style={{ width: '50rem' }}
+              style={{ width: '60rem' }}
               className="mb-2"
+              border="dark"
             >
-              <Card.Body>
-                <Card.Title>Alka Sah </Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
-                </Card.Text>
+              <Card.Header as = 'h8'style={{backgroundColor:"lemonchiffon"}} >Alka Sah
                 <Card.Link href = "/About">About Me</Card.Link>
-                <Card.Link href = "/">Portfolio</Card.Link>
+                <Card.Link href = "/Portfolio">Portfolio</Card.Link>
                 <Card.Link href = "/">Contact</Card.Link>
                 <Card.Link href = "/">Resume</Card.Link>
+              </Card.Header>  
+              {/* <Card.Img variant="top" src="../../public/Portfolio.jpg" />   */}
+              <Card.Body style={{backgroundColor : "lightcyan"}}>
+                <Card.Title>About Me</Card.Title>
+                <Card.Text>
+                      Hello There ! I am Alka Sah. Having spent of a large chunk of my life  in Banking and customer service . I have finally found my passion
+                      in web design and technology. I'm an exceptionally creative designer and a coding elf.
+                {/* <Card.Img variant="top" src="../../public/Portfolio.jpg" />   */}
+
+                </Card.Text>
+                
               </Card.Body>
             </Card>
           ))}
           </>
- 
+  )
 }
 
-export default About()
+export default About;
 
 
 
