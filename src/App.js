@@ -1,6 +1,6 @@
 import React from "react";
 import About from "./Components/About";
-// import Navbar from "./components/Navbar";
+ import Navbar from "./Components/Navbar";
 // import Projects from "./components/Projects";
 // import Skills from "./components/Skills";
 // import Testimonials from "./components/Testimonials";
@@ -8,7 +8,7 @@ import About from "./Components/About";
 export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
-      {/* <Navbar /> */}
+      <Navbar />
       <About />
       {/* <Projects />
       <Skills />
