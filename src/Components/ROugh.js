@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import { CardGroup } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-
-
+//import projects from './Portfolio.json';
 
 function Portfolio () {
+  
   return (
     <>
     {[
@@ -33,7 +33,7 @@ function Portfolio () {
                  <Row xs={1} md={2} className="g-4" style={
                   {backgroundColor:"LavenderBlush",border:"1px solid"}
                 }>
-                {Array.from({ length: 2 }).map((_,idx)=>(
+                {Array.from({ length: 1 }).map((_,idx)=>(
                   <Col>
                   <Card.Text>
                     <div>
@@ -47,8 +47,6 @@ function Portfolio () {
                   </Card.Text>
                   </Col>
                   
-                 
-                  
                 ))}
                 </Row>
                 
@@ -58,8 +56,12 @@ function Portfolio () {
    
    </>
   
-   
-  )
+      );  
 }
 
 export default Portfolio;
+
+
+
+
+       

@@ -16,7 +16,7 @@ function About () {
               className="mb-2"
               border="dark"
             >
-              <Card.Header as = 'h8'style={{backgroundColor:"lemonchiffon"}} >Alka Sah
+              <Card.Header as = 'h5'style={{backgroundColor:"lemonchiffon"}} >Alka Sah
                 <Card.Link href = "/About">About Me</Card.Link>
                 <Card.Link href = "/Portfolio">Portfolio</Card.Link>
                 <Card.Link href = "/">Contact</Card.Link>
