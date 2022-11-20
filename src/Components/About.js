@@ -1,62 +1,41 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
 
-function About () {
+export default function About() {
   return (
-  <>
-        {[
-            'Light'           
-          ].map((variant) => (
-            <Card
-              bg={variant.toLowerCase()}
-              key={variant}
-              text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-              style={{ width: '60rem' }}
-              className="mb-2"
-              border="dark"
-            >
-              <Card.Header as = 'h5'style={{backgroundColor:"lemonchiffon"}} >Alka Sah
-                <Card.Link href = "/About">About Me</Card.Link>
-                <Card.Link href = "/Portfolio">Portfolio</Card.Link>
-                <Card.Link href = "/">Contact</Card.Link>
-                <Card.Link href = "/">Resume</Card.Link>
-              </Card.Header>  
-              {/* <Card.Img variant="top" src="../../public/Portfolio.jpg" />   */}
-              <Card.Body style={{backgroundColor : "lightcyan"}}>
-                <Card.Title>About Me</Card.Title>
-                <Card.Text>
-                      Hello There ! I am Alka Sah. Having spent of a large chunk of my life  in Banking and customer service . I have finally found my passion
-                      in web design and technology. I'm an exceptionally creative designer and a coding elf.
-                {/* <Card.Img variant="top" src="../../public/Portfolio.jpg" />   */}
-
-                </Card.Text>
-                
-              </Card.Body>
-            </Card>
-          ))}
-          </>
-  )
+    <section id="about">
+      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Hi, I'm Reed.
+            <br className="hidden lg:inline-block" />I love to build amazing
+            apps.
+          </h1>
+          <p className="mb-8 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
+            Laborum, voluptas natus?
+          </p>
+          <div className="flex justify-center">
+            <a
+              href="#contact"
+              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              Work With Me
+            </a>
+            <a
+              href="#projects"
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              See My Past Work
+            </a>
+          </div>
+        </div>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            className="object-cover object-center rounded"
+            alt="hero"
+            src="./coding.svg"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default About;
-
-
-
-
-        // <section className="main section">
-        //     <div className="about">
-        //     <div className="text">
-        //         <div  className="header">
-        //             <h1>About Me</h1>
-        //         </div>
-        //         <p>Hello there! I'm Sienna Li! I'm a web developer and designer based in San Francisco Bay Area.<br/>⠀</p>
-        //         <p>Having spent a large chunk of my life in arts and music, I've finally found my passion at the web design and technology. I'm an exceptionally creative designer and a coding elf.<br/>⠀</p>
-        //         <p>Currently I'm a student at <a className="school"href="https://bootcamp.berkeley.edu/coding/" target="_blank" rel="noreferrer">UC Berkeley Bootcamp</a> and spend most of my time designing websites. 
-        //         When I'm not busy, you can find me obsessing over food, cats and traveling. 
-        //         <br/>⠀</p>
-        //     </div>
-        //     <div className="avatar"></div> 
-        //     </div>
-        // </section>
-    

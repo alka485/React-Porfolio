@@ -1,25 +1,19 @@
 import React from "react";
-import {BrowserRouter as Router,Route,Routes } from "react-router-dom"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./Components/About";
+// import Navbar from "./components/Navbar";
+// import Projects from "./components/Projects";
+// import Skills from "./components/Skills";
+// import Testimonials from "./components/Testimonials";
 
-import Home from './Components/Home';
-import About from './Components/About';
-import Portfolio from "./Components/Portfolio";
-//import { Route } from "react-router-dom";
-
-function App() {
+export default function App() {
   return (
-  <Router>
-    <Routes>
-           <Route path="/About"element = {<About />} />
-           <Route path='/' element = {<Home />} />
-           <Route path='/Portfolio' element = {<Portfolio />} />
-           
-           </Routes>
-
-            
-         </Router>
-  )
+    <main className="text-gray-400 bg-gray-900 body-font">
+      {/* <Navbar /> */}
+      <About />
+      {/* <Projects />
+      <Skills />
+      <Testimonials />
+      <Contact /> */}
+    </main>
+  );
 }
-
-export default App;
