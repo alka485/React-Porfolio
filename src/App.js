@@ -2,6 +2,8 @@ import React,{useState} from "react";
 import About from "./Components/About";
  import Navbar from "./Components/Navbar";
  import Home from "./Components/Home";
+ import Portfolio from "./Components/Portfolio";
+ import Contact from "./Components/Contact";
 // import Projects from "./components/Projects";
 // import Skills from "./components/Skills";
 // import Testimonials from "./components/Testimonials";
@@ -28,6 +30,12 @@ export default function App() {
     }
     if (currentPage === 'About') {
       return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
     }
   }
   const handlePageChange = (page) => setCurrentPage(page);
