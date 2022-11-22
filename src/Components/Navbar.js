@@ -4,8 +4,8 @@ import React from 'react';
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs" style={{backgroundColor:"lemonchiffon"}}>
-      <li className="nav-item" >
+    <ul className="nav nav-tabs" style={{backgroundColor:"lemonchiffon" , width : "60rem"}}>
+      {/* <li className="nav-item" >
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
@@ -15,7 +15,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Home
         </a>
-      </li>
+      </li> */}
       <li className="nav-item">
         <a
           href="#about"

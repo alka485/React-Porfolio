@@ -8,7 +8,8 @@ export default function About() {
       
       <p>
       Hello There ! I am Alka Sah. Having spent of a large chunk of my life  in Banking and customer service . I have finally found my passion
-      in web design and technology. I'm an exceptionally creative designer and a coding elf.
+      in web design and technology. I'm an exceptionally creative designer and a coding elf.  I also create,evaluate,and improve product designs.
+      truly believe in what I am doing as an user experience evangelist.
      </p>   
     </div>
   );

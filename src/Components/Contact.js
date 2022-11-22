@@ -49,13 +49,6 @@ export default function Contact() {
           placeholder="email"
         />
         <p>Message :</p>
-        {/* <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="message"
-          placeholder="Message"
-        /> */}
         <textarea
         value={message}
         name="message"
@@ -63,9 +56,6 @@ export default function Contact() {
         type="message"
         placeholder='Message'
        />
-
-        
-        
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       
