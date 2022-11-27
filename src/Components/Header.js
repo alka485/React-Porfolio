@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, HashRouter } from "react-router-dom";
+import { Route,Routes, HashRouter } from "react-router-dom";
 import Navigation from "../Components/Navigation";
 import About from "../Components/About";
 import Portfolio from "../Components/Portfolio";
@@ -17,11 +17,12 @@ class Header extends Component {
 
         <div className="content">
             
-          
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact}/>
-          <Route path="/resume" component={Resume}/>
+          <Routes>
+          <Route path="/about" element = {<About/>} />
+          <Route path="/portfolio" element = {<Portfolio/>} />
+          <Route path="/contact" element ={<Contact />}/>
+          <Route path="/resume" element = {<Resume/>}/>
+          </Routes>
           
         </div>
       </HashRouter>
