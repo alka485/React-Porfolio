@@ -29,7 +29,7 @@ export default function Contact() {
   };
 
   return (
-    <div style={{backgroundColor : "lightcyan", width : "60rem"}}>
+    <div style={{width : "60rem"}}>
       <h1>Contact Page</h1>
       <form className="form">
         <p>Name : </p>
