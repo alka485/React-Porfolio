@@ -15,7 +15,7 @@ export default function Header () {
       case "about":
         return <About></About>
         case "contact":
-          return <Contact></Contact>
+          return <Contact/>
           case "portfolio":
             return<Portfolio></Portfolio>
           case "resume" :
