@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "name": "React Retreat",
-        "image": "https://github.com/kpehl/react-retreat/raw/main/docs/react-retreat.png",
-        "github": "https://github.com/kpehl/react-retreat",
-        "deploy": "https://react-retreat.herokuapp.com/",
+        "name": "Team Profile Generator",
+        "image": "https://github.com/alka485/Team-profile-generator/blob/main/Assets/Team%20Profile.png",
+        "github": "https://github.com/alka485/Team-profile-generator",
+        "deploy": "https://drive.google.com/file/d/12RUuO5ngYswSnTC9Ts_MrSaPtGdJh1UP/view",
         "topics": "Reactjs, Creat-React-App service worker, GraphQl, Redux, JWT Authentication, ReactStrap, node, express-session, jawsdb, mongodb, mongoose"
     },
     {
