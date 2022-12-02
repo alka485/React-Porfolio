@@ -9,23 +9,21 @@ import Resume from '../Components/Resume';
 export default function Header () {
 
   const [currentPage,handlePageChange] = useState('About');
-
+  
   const renderPage = () => {
     switch(currentPage) {
-      case "about":
+      case "About":
         return <About/>
-        case "contact":
+        case "Contact":
           return <Contact/>
-          case "portfolio":
+          case "Portfolio":
             return<Portfolio/>
           case "resume" :
-            return<Resume></Resume>
+            return<Resume/>
            default:
-            return<Contact/> 
+            return<About/> 
     }
-    // if(currentPage === 'about'){
-    //   return <About/>
-    // }
+   
   };
   return(
     <div>

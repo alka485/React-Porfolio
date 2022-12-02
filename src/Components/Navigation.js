@@ -9,8 +9,7 @@ export default function Navigation(props) {
           <a
             href={"#" + tab.toLowerCase()}
             onClick = {() => props.handlePageChange(tab)}
-            className = {
-              
+            className = { 
               props.currentPage === tab ? 'nav-link active' : 'nav-link'
             }
             >

@@ -1,11 +1,12 @@
 [
     {
         "id": 1,
-        "name": "Team Profile Generator",
-        "image": "https://github.com/alka485/Team-profile-generator/blob/main/Assets/Team%20Profile.png",
-        "github": "https://github.com/alka485/Team-profile-generator",
-        "deploy": "https://drive.google.com/file/d/12RUuO5ngYswSnTC9Ts_MrSaPtGdJh1UP/view",
-        "topics": "Reactjs, Creat-React-App service worker, GraphQl, Redux, JWT Authentication, ReactStrap, node, express-session, jawsdb, mongodb, mongoose"
+        "name": "Work Day Scheduler",
+        "image": "https://raw.githubusercontent.com/alka485/Work-Day-Scheduler/main/assets/workdayscheduler.gif",
+        "github": "https://github.com/alka485/Work-Day-Scheduler.git",
+        "deploy": "https://alka485.github.io/Work-Day-Scheduler/",
+        "description": "This application uses third-party API and JavaScript to create a calendar-style scheduler allowing users to save events for each hour of the day.",
+        "skills": "JavaScript | jQuery | API | DOM"
     },
     {
         "id": 2,
