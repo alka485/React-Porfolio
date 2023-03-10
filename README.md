@@ -17,7 +17,7 @@ The user should clone the repository from GitHub and install dependencies. To ru
 ## Usage
 
 This application will allow users view an about me page, send information through a contact form, view my projects, and view my resume.
-Please view deployed application on https://alka485.github.io/react-porfolio/
+Please view deployed application on http://localhost:3000/react-porfolio
 
 Heroku Link  : https://peaceful-ridge-20529.herokuapp.com/#about
 
